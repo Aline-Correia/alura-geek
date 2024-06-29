@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Alura Geek - Plataforma de Produtos Geek">
+    <meta name="description"
+        content="Alura Geek é uma plataforma onde você pode adicionar e remover produtos. Projeto totalmente responsivo com formulário de inserção e lista de produtos incluídos.">
+    <meta name="keywords"
+        content="Alura Geek, Produtos Geek, Adicionar Produtos, Remover Produtos, Responsivo, Formulário de Inserção, Lista de Produtos, Webpack, HTML, TailwindCSS, CSS, JavaScript, jQuery, JSON-Server">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Seu Nome">
+    <meta name="language" content="Portuguese">
+    <meta property="og:title" content="Alura Geek - Plataforma de Produtos Geek">
+    <meta property="og:description"
+        content="Alura Geek é uma plataforma onde você pode adicionar e remover produtos. Projeto totalmente responsivo com formulário de inserção e lista de produtos incluídos.">
+    <meta property="og:image" content="URL_da_imagem_de_preview">
+    <meta property="og:url" content="https://seu-deploy-url.com">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Alura Geek - Plataforma de Produtos Geek">
+    <meta name="twitter:description"
+        content="Alura Geek é uma plataforma onde você pode adicionar e remover produtos. Projeto totalmente responsivo com formulário de inserção e lista de produtos incluídos.">
+    <meta name="twitter:image" content="URL_da_imagem_de_preview">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;400;500;600;700&display=swap"
+    rel="stylesheet">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
+    <title>Alura Geek - Plataforma de Produtos Geek</title>
+</head>
+
+<body class="ibm-plex-mono-regular ">
+    <header class="flex items-center justify-center p-3 shadow-lg select-none bg-roxo shadow-stone-900/30">
+        <img src="./images/heart.png" alt="Logo Alura Geek" class="h-12">
+        <h2 class="text-xl text-white press-start-2p-regular">AluraGeek</h2>
+    </header>
+
+    <main
+        class="my-10 space-y-10 lg:space-y-0 lg:flex lg:items-start lg:flex-row-reverse lg:gap-6 lg:max-w-2xl lg:mx-auto lg:justify-between xl:space-y-0 xl:flex xl:items-start xl:flex-row-reverse xl:justify-between xl:mx-auto xl:max-w-6xl xl:gap-40">
+        <section class="flex flex-col items-center justify-center gap-6 p-6 lg:gap-10 lg:p-6 xl:gap-10 xl:p-10">
+            <h2 class="text-2xl text-center uppercase press-start-2p-regular">Adicionar Produto:</h2>
+
+            <form class="flex justify-center items-center gap-10 flex-col w-full *:w-full" id="form">
+
+                <input type="text" name="name" id="input-name" placeholder="Fone de Ouvido Bluetooth..." required
+                    autocomplete="off"
+                    class="p-4 font-semibold border-4 rounded-full outline-none input placeholder:text-blue-800"
+                    maxlength="100" pattern="^[A-Za-zÀ-ÖØ-öø-ÿ0-9\s-]+$" style="border-color: #1e40af;"
+                    title="O nome deve conter apenas letras, números, espaços e hífens.">
+
+
+                <input type="text" name="price" id="input-price" placeholder="198,90" required autocomplete="off"
+                    class="p-4 font-semibold border-4 rounded-full outline-none input placeholder:text-blue-800"
+                    style="border-color: #1e40af;" maxlength="10" pattern="^\d{1,6}(,\d{2})?$"
+                    title="O preço deve ser um número com até duas casas decimais separadas por vírgula.">
+
+
+                <input type="url" name="image" id="input-image" placeholder="https://link-para-imagem/imagem.jpg"
+                    required autocomplete="off"
+                    class="p-4 font-semibold border-4 border-blue-800 rounded-full outline-none input placeholder:text-blue-800"
+                    maxlength="2048" pattern="https?://.+"
+                    title="Por favor, insira uma URL válida começando com http:// ou https://">
+
+
+                <fieldset class="flex items-center justify-between gap-2">
+                    <button name="submit"
+                        class="px-6 py-2 text-xl font-medium text-white bg-blue-800 border-4 border-blue-800 rounded-xl">Guardar</button>
+                    <button type="reset" name="reset"
+                        class="px-6 py-2 text-xl font-medium text-blue-800 border-4 border-blue-800 rounded-xl">Limpar</button>
+                </fieldset>
+            </form>
+        </section>
+
+
+        <section class="space-y-10 xl:p-10">
+            <h2 class="text-2xl text-center uppercase press-start-2p-regular">Meus produtos:</h2>
+
+            <ul class="grid grid-flow-row grid-cols-2 p-2 gap-y-10 gap-x-2 xl:grid-cols-3" id="ulListProducts"></ul>
+
+        </section>
+    </main>
+
+
+    <footer class="flex flex-col items-center justify-center p-4 shadow-lg bg-roxo shadow-stone-900/30">
+        <div class="flex items-center justify-center p-3">
+            <img src="./images/heart.png" alt="Logo Alura Geek" class="h-12">
+            <h2 class="text-xl text-white press-start-2p-regular">AluraGeek</h2>
+        </div>
+        <div class="*:uppercase *:text-center space-y-2">
+            <h6 class="text-white">Desenvolvido por Aline</h6>
+            <h6 class="text-gray-400">Oracle Next Education - 2024</h6>
+        </div>
+    </footer>
+</body>
+
+</html>

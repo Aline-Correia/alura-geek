@@ -1,0 +1,52 @@
+{
+  "products": [
+    {
+      "name": "Fones de ouvido para jogos",
+      "price": 159.99,
+      "image": "https://m.media-amazon.com/images/I/61nsfaqxZbS._AC_SX679_.jpg",
+      "id": "d324"
+    },
+    {
+      "name": "Controle Dualsense - Starlight Blue",
+      "price": 499.9,
+      "image": "https://m.media-amazon.com/images/I/51VAN74vJKL._AC_SX679_.jpg",
+      "id": "8074"
+    },
+    {
+      "name": "Notebook Gamer Lenovo LOQ Intel Core i5-12450H 8GB 512GB SSD RTX2050 15.6\"FHD W11 83EU0000BR",
+      "price": 4299,
+      "image": "https://m.media-amazon.com/images/I/71IelM5QjjL._AC_SX679_.jpg",
+      "id": "8ead"
+    },
+    {
+      "name": "Notebook Gamer Dell G15-i1300-M70BP 15.6\" FHD 13ªGeração Intel Core i7 16GB 1TB SSD NVIDIA RTX 4050 W11 + Mochila Gaming",
+      "price": 9109.9,
+      "image": "https://m.media-amazon.com/images/I/515jvQHLriL.__AC_SX300_SY300_QL70_ML2_.jpg",
+      "id": "cfd9"
+    },
+    {
+      "name": "Nova chegada HY320 Mini Projetor Portátil Auto Keystone, Projetor Inteligente 4K FHD 1080P Suporte 10000 Lumens com WiFi 6, BT 5.0, Rotação de 180 Graus, Android 11.0 integrado (EU PLUG)",
+      "price": 499.99,
+      "image": "https://m.media-amazon.com/images/I/51tX5GFyjiL._AC_SX679_.jpg",
+      "id": "6f1e"
+    },
+    {
+      "name": "Qcy T13 ANC Fone De Ouvido Sem Fio, Fone Bluetooth 5.3 Com Cancelamento De Ruído Ativo, 30Horas de Reprodução, Preto",
+      "price": 499.99,
+      "image": "https://m.media-amazon.com/images/I/513Z1cDs6hL._AC_SX679_.jpg",
+      "id": "5c5e"
+    },
+    {
+      "id": "9301",
+      "name": "Microsoft OFFICE 365 ",
+      "price": 139.9,
+      "image": "https://m.media-amazon.com/images/I/61c2fmVAAbL._AC_SX679_.jpg"
+    },
+    {
+      "id": "aa9d",
+      "name": "SanDisk Cartão microSDXC",
+      "price": 88,
+      "image": "https://m.media-amazon.com/images/I/61TabCJgJBL._AC_SX522_.jpg"
+    }
+  ]
+}
